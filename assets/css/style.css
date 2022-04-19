@@ -1,7 +1,15 @@
+/* Import des fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Open+Sans&display=swap');
+
 body {
     background-color: black;
+    font-family: 'Open Sans', sans-serif;
 }
 
+
+/* -------------- */
+/* CONTAINER */
+/* -------------- */
 .container {
     display: grid;
     /* nous allons faire une grid de 12 colonnes */
@@ -13,23 +21,132 @@ body {
     background-color: white;
 }
 
+
+/* -------------- */
+/* SMARTPHONE */
+/* -------------- */
 .smartphone {
     grid-column: 1/ span 6;
     grid-row: 1/2;
+
+    /* nous allons espacer nos divs à l'aide de flexbox */
+    display: flex;
+    justify-content: space-evenly;
+
     background-color: white;
 }
 
+.smartphone .text {
+    /* nous allons faire un flex columns pour centrer nos div verticalement et horizontalement */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 0.8rem;
+
+    width: 30%;
+}
+
+.smartphone .text p {
+    margin: 0;
+}
+
+.smartphone .text .title {
+    font-size: 0.4rem;
+    margin-bottom: 0.5rem;
+    color: gray;
+}
+
+.smartphone .text .more {
+    font-size: 0.5rem;
+    margin-top: 0.5rem;
+    color: lightgray;
+}
+
+.smartphone .picture {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 50%;
+}
+
+.smartphone .picture img {
+    width: 55%;
+    height: auto;
+}
+
+
+/* -------------- */
+/* CHEMICAL */
+/* -------------- */
 .chemical {
     grid-column: 7/ span 6;
     grid-row: 1/2;
+
+    /* nous allons faire un flex columns pour centrer nos div verticalement et horizontalement */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     background-color: #F7F8F9;
+    text-align: center;
 }
 
+.chemical .text {
+    margin: 0;
+    font-family: 'Arvo', serif;
+    font-size: 1.6rem;
+}
+
+.chemical .more {
+    font-size: 0.4rem;
+    margin-bottom: 0.5rem;
+    color: gray;
+}
+
+.chemical .download {
+    font-size: 0.5rem;
+    margin-top: 0.4rem;
+    color: rgb(56, 158, 158);
+    text-decoration: underline;
+}
+
+
+/* -------------- */
+/* KEYBOARD */
+/* -------------- */
 .keyboard {
     grid-column: 1/ span 3;
     grid-row: 2/3;
+
+    /* nous allons faire un flex columns pour centrer nos div verticalement et horizontalement */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     background-color: #F05638;
+    text-align: center;
 }
+
+.keyboard .text {
+    color: white;
+    font-family: 'Arvo', serif;
+}
+
+.keyboard .learn {
+    color: rgb(245, 175, 44);
+    font-size: 0.5rem;
+}
+
+.keyboard img{
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+
+
 
 .oldComputer {
     grid-column: 4/ span 6;
@@ -72,4 +189,3 @@ body {
     grid-row: 4/5;
     background-color: #2C2C2C;
 }
-
