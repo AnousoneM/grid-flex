@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    /* nous allons faire une grid de 12 colonnes */
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 27vh 27vh 27vh 19vh;
+
+    width: 65vw;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.smartphone {
+    grid-column: 1/ span 6;
+    grid-row: 1/2;
+    background-color: white;
+}
+
+.chemical {
+    grid-column: 7/ span 6;
+    grid-row: 1/2;
+    background-color: #F7F8F9;
+}
+
+.keyboard {
+    grid-column: 1/ span 3;
+    grid-row: 2/3;
+    background-color: #F05638;
+}
+
+.oldComputer {
+    grid-column: 4/ span 6;
+    grid-row: 2/3;
+    background-color: white;
+}
+
+.disk {
+    grid-column: 10/ span 3;
+    grid-row: 2/4;
+    background-color: #8166B0;
+}
+
+.gameController {
+    grid-column: 1/ span 3;
+    grid-row: 3/4;
+    background-color: white;
+}
+
+.laptop {
+    grid-column: 4/ span 6;
+    grid-row: 3/4;
+    background-color: #93B6B7;
+}
+
+.yellowTwitter {
+    grid-column: 1/ span 3;
+    grid-row: 4/5;
+    background-color: #38D5F4;
+}
+
+.experience {
+    grid-column: 4/ span 3;
+    grid-row: 4/5;
+    background-color: white;
+}
+
+.oldTv {
+    grid-column: 7/ span 6;
+    grid-row: 4/5;
+    background-color: #2C2C2C;
+}
+
