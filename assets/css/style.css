@@ -139,21 +139,75 @@ body {
     font-size: 0.5rem;
 }
 
-.keyboard img{
+.keyboard img {
     display: block;
     width: 50%;
     height: auto;
 }
 
 
-
-
+/* -------------- */
+/* OLDCOMPUTER */
+/* -------------- */
 .oldComputer {
     grid-column: 4/ span 6;
     grid-row: 2/3;
+
+    /* display flex permettant de manipuler les divs plus facilement */
+    display: flex;
     background-color: white;
 }
 
+.oldComputer .computer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Pour aligner les items vers le bas */
+    justify-content: flex-end;
+
+    border: 1px solid blue;
+    background-color: aquamarine;
+    width: 45%;
+}
+
+.oldComputer .computer .title {
+    color: grey;
+    font-size: 0.4rem;
+}
+
+.oldComputer .computer .hardly {
+    font-family: 'Arvo', serif;
+    font-size: 0.8rem;
+}
+
+.oldComputer .computer img {
+    /* border:1px solid black; */
+    width: 7.5rem;
+    height: 4rem;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
+.oldComputer .text {
+    border: 1px solid black;
+    width: 50%;
+    padding: 1rem;
+}
+
+.oldComputer .text p {
+    color: lightgray;
+    font-size: 0.6rem;
+}
+
+.oldComputer .text .download {
+    color: rgb(33, 144, 154);
+    font-size: 0.4rem;
+}
+
+
+/* -------------- */
+/* DISK */
+/* -------------- */
 .disk {
     grid-column: 10/ span 3;
     grid-row: 2/4;
