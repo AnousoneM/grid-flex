@@ -7,9 +7,9 @@ body {
 }
 
 
-/* -------------- */
+/* ------------------------------------------------------ */
 /* CONTAINER */
-/* -------------- */
+/* ------------------------------------------------------ */
 .container {
     display: grid;
     /* nous allons faire une grid de 12 colonnes */
@@ -22,9 +22,9 @@ body {
 }
 
 
-/* -------------- */
+/* ------------------------------------------------------ */
 /* SMARTPHONE */
-/* -------------- */
+/* ------------------------------------------------------ */
 .smartphone {
     grid-column: 1/ span 6;
     grid-row: 1/2;
@@ -76,9 +76,9 @@ body {
 }
 
 
-/* -------------- */
+/* ------------------------------------------------------ */
 /* CHEMICAL */
-/* -------------- */
+/* ------------------------------------------------------ */
 .chemical {
     grid-column: 7/ span 6;
     grid-row: 1/2;
@@ -112,9 +112,9 @@ body {
 }
 
 
-/* -------------- */
+/* ------------------------------------------------------ */
 /* KEYBOARD */
-/* -------------- */
+/* ------------------------------------------------------ */
 .keyboard {
     grid-column: 1/ span 3;
     grid-row: 2/3;
@@ -146,9 +146,9 @@ body {
 }
 
 
-/* -------------- */
+/* ------------------------------------------------------ */
 /* OLDCOMPUTER */
-/* -------------- */
+/* ------------------------------------------------------ */
 .oldComputer {
     grid-column: 4/ span 6;
     grid-row: 2/3;
@@ -207,36 +207,53 @@ body {
 }
 
 
-/* -------------- */
+/* ------------------------------------------------------ */
 /* DISK */
-/* -------------- */
+/* ------------------------------------------------------ */
 .disk {
     grid-column: 10/ span 3;
     grid-row: 2/4;
-    background-color: #8166B0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #8f75bc;
     color: white;
     text-align: center;
 }
 
+/* 1ere div contenant la disquette et le cercle */
 .disk .circle {
-    border: #2C2C2C 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     height: 50%;
-    background-color: #533b7b;
+    border-radius: 50%;
+    background-color: #8167b0;
+    margin: 0.5rem;
 }
 
 .disk .circle .title {
-    font-size: 0.3rem;
+    font-size: 0.4rem;
     font-family: 'Open Sans', sans-serif;
+
+    /* Mise en place de radius pour l'arrondi */
+    border-radius: 16px;
+    padding: 0.1rem 0.6rem;
+    background-color: #8f75bc;
 }
 
 .disk .circle p {
-    font-size: 0.3rem;
+    font-size: 0.5rem;
     font-weight: bold;
     margin: 0;
 }
 
 .disk img {
-    width: 60%;
+    width: 58%;
     height: auto;
 }
 
@@ -244,6 +261,7 @@ body {
     margin: 0;
 }
 
+/* 2eme div contenant Icloud, description, learn ... */
 .disk .title {
     font-family: 'Arvo', serif;
     font-weight: bold;
@@ -266,11 +284,22 @@ body {
     background-color: rgb(248, 195, 36);
 }
 
+
+/* ------------------------------------------------------ */
+/* GAMECONTROLLER */
+/* ------------------------------------------------------ */
 .gameController {
     grid-column: 1/ span 3;
     grid-row: 3/4;
     background-color: white;
 }
+
+
+
+
+
+
+
 
 .laptop {
     grid-column: 4/ span 6;
