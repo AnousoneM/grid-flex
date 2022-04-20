@@ -218,6 +218,28 @@ body {
     text-align: center;
 }
 
+.disk .circle {
+    border: #2C2C2C 1px solid;
+    height: 50%;
+    background-color: #533b7b;
+}
+
+.disk .circle .title {
+    font-size: 0.3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.disk .circle p {
+    font-size: 0.3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.disk img {
+    width: 60%;
+    height: auto;
+}
+
 .disk p {
     margin: 0;
 }
