@@ -167,7 +167,7 @@ body {
 }
 
 .oldComputer .computer p {
-margin: 0;
+    margin: 0;
 }
 
 .oldComputer .computer .title {
@@ -193,7 +193,7 @@ margin: 0;
 
 .oldComputer .text {
     width: 50%;
-    padding: 3rem;
+    padding: 1.2rem 3rem 3rem 3rem;
 }
 
 .oldComputer .text p {
@@ -214,6 +214,34 @@ margin: 0;
     grid-column: 10/ span 3;
     grid-row: 2/4;
     background-color: #8166B0;
+    color: white;
+    text-align: center;
+}
+
+.disk p {
+    margin: 0;
+}
+
+.disk .title {
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.disk .description {
+    font-size: 0.6rem;
+    padding: 0 1.5rem;
+}
+
+.disk .learnButton {
+    width: 5rem;
+    color: black;
+    font-size: 0.45rem;
+    font-weight: bold;
+    border-radius: 16px;
+    padding: 0.5rem 0;
+    margin: 1rem auto 0 auto;
+    background-color: rgb(248, 195, 36);
 }
 
 .gameController {
