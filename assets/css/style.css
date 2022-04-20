@@ -357,12 +357,46 @@ body {
 
 
 
-
+/* ------------------------------------------------------ */
+/* YELLOWTWITTER */
+/* ------------------------------------------------------ */
 .yellowTwitter {
     grid-column: 1/ span 3;
     grid-row: 4/5;
     background-color: #38D5F4;
+    color: white;
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+
 }
+
+.yellowTwitter .circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 0 1rem;
+    height: 98%;
+    width: 58%;
+    border-radius: 50%;
+    background-color: #35ceed;
+    text-align: center;
+}
+
+.circle p {
+    margin: 0;
+}
+
+.yellowTwitter .circle img {
+    width: 2rem;
+    margin-bottom: 0.5rem;
+    height: auto;
+}
+
+
+
 
 .experience {
     grid-column: 4/ span 3;
