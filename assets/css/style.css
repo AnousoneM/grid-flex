@@ -355,8 +355,6 @@ body {
 }
 
 
-
-
 /* ------------------------------------------------------ */
 /* YELLOWTWITTER */
 /* ------------------------------------------------------ */
@@ -396,13 +394,43 @@ body {
 }
 
 
-
-
+/* ------------------------------------------------------ */
+/* EXPERIENCE */
+/* ------------------------------------------------------ */
 .experience {
     grid-column: 4/ span 3;
     grid-row: 4/5;
     background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.experience p {
+    margin: 0;
+}
+
+.experience .popular {
+    padding: 0.2rem;
+    margin-bottom: 0.5rem;
+    width: 2.5rem;
+    border-radius: 3px;
+    background-color: #7cc321;
+    color: white;
+    font-size: 0.4rem;
+    text-align: center;
+}
+
+.experience .text {
+    font-family: 'Arvo', serif;
+    text-align: center;
+}
+
+
+
+
 
 .oldTv {
     grid-column: 7/ span 6;
