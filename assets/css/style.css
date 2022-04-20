@@ -289,12 +289,32 @@ body {
 /* GAMECONTROLLER */
 /* ------------------------------------------------------ */
 .gameController {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     grid-column: 1/ span 3;
     grid-row: 3/4;
     background-color: white;
+    text-align: center;
 }
 
+.gameController img {
+    width: 60%;
+    height: auto;
+    margin-left: 15%;
+}
 
+.gameController .title {
+    font-weight: bold;
+    font-family: 'Arvo', serif;
+}
+
+.gameController .learn {
+    font-weight: bold;
+    font-size: 0.5rem;
+    color: rgb(33, 144, 154)
+}
 
 
 
